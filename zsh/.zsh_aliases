@@ -1,0 +1,5 @@
+alias vim="nvim"
+alias vi="nvim"
+
+alias amogus="pushd $HOME/.local/share/Steam/steamapps/common/Among\ Us"
+
