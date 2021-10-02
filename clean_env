@@ -1,7 +1,11 @@
 #!/usr/bin/env zsh
 pushd $DOTFILES
-for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
-do
+
+stow_folders=($(echo $STOW_FOLDERS | sed "s/,/ /g"))
+
+echo $stow_folders
+
+for folder in $stow_folders; do
     echo "Removing $folder"
     stow -D $folder
 done

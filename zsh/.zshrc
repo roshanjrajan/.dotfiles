@@ -10,8 +10,8 @@ ZSH=/usr/share/oh-my-zsh/
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
-DOTFILES=$HOME/.dotfiles
-STOW_FOLDERS="awesome,tmux,zsh"
+export DOTFILES=$HOME/.dotfiles
+export STOW_FOLDERS="awesome,tmux,zsh"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
