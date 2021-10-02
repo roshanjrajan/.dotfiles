@@ -11,7 +11,7 @@ HYPHEN_INSENSITIVE="true"
 DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -22,6 +22,12 @@ if [ -f $HOME/.zsh_aliases ]; then
 	source $HOME/.zsh_aliases
 else
 	print "404: $HOME/.zsh_aliases not found."
+fi
+
+if [ -f $HOME/.zsh_profile ]; then
+	source $HOME/.zsh_profile
+else
+	print "404: $HOME/.zsh_profile not found."
 fi
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
