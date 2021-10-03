@@ -1,5 +1,5 @@
 export XDG_CONFIG_HOME=$HOME/.config
 export DOTFILES=$HOME/.dotfiles
-export STOW_FOLDERS="awesome,nvim,tmux,zsh"
+export STOW_FOLDERS="alacritty,awesome,nvim,tmux,zsh"
 export EDITOR='nvim'
 export GITEDITOR='nvim'
