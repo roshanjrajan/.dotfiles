@@ -30,6 +30,18 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+  mkdir $ZSH_CACHE_DIR
+fi
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+	eval `ssh-agent`
+	ssh-add
+fi
+
+source $ZSH/oh-my-zsh.sh
+
 if [ -f $HOME/.zsh_aliases ]; then
 	source $HOME/.zsh_aliases
 else
@@ -42,16 +54,5 @@ else
 	print "404: $HOME/.zsh_profile not found."
 fi
 
-ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
-if [[ ! -d $ZSH_CACHE_DIR ]]; then
-  mkdir $ZSH_CACHE_DIR
-fi
-
-if [ -z "$SSH_AUTH_SOCK" ] ; then
-	eval `ssh-agent`
-	ssh-add
-fi
-
-source $ZSH/oh-my-zsh.sh
 autoload -U compinit && compinit
 
