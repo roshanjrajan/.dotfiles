@@ -1,5 +1,8 @@
 set number
 set relativenumber
+set ignorecase
+set smartcase
+set incsearch
 
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
