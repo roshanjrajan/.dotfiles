@@ -1,5 +1,13 @@
+# Paths
 export XDG_CONFIG_HOME=$HOME/.config
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+
+# DotFiles
 export DOTFILES=$HOME/.dotfiles
 export STOW_FOLDERS="alacritty,awesome,nvim,tmux,zsh"
+
+# Settings
 export EDITOR='nvim'
 export GITEDITOR='nvim'
