@@ -9,5 +9,5 @@ alias vi="nvim"
 
 
 # Directory Aliases
-alias amogus="pushd $HOME/.local/share/Steam/steamapps/common/Among\ Us"
+alias amogus="cd $HOME/.local/share/Steam/steamapps/common/Among\ Us"
 
