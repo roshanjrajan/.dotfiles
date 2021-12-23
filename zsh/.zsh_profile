@@ -13,7 +13,6 @@ export VSCODE_GALLERY_RECOMMENDATIONS_URL=''
 
 # DotFiles
 export DOTFILES=$HOME/.dotfiles
-export STOW_FOLDERS="alacritty,awesome,nvim,tmux,zsh"
 
 # Settings
 export EDITOR='nvim'

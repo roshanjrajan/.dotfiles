@@ -1,10 +1,6 @@
 #!/usr/bin/env zsh
-if [[ -z $STOW_FOLDERS ]]; then
-    STOW_FOLDERS="alacritty,awesome,nvim,tmux,zsh"
-fi
 
-if [[ -z $DOTFILES ]]; then
-    DOTFILES=$HOME/.dotfiles
-fi
+# run this script 
+STOW_FOLDERS="alacritty,arch_generic,awesome,nvim,tmux,zsh"
 
-STOW_FOLDERS=$STOW_FOLDERS DOTFILES=$DOTFILES $DOTFILES/install
+$DOTFILES/install
