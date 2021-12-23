@@ -17,6 +17,8 @@ local hotkeys_popup = require("awful.hotkeys_popup")
 local brightness_widget = require("awesome-wm-widgets.brightness-widget.brightness")
 local volume_widget = require('awesome-wm-widgets.volume-widget.volume')
 local batteryarc_widget = require("awesome-wm-widgets.batteryarc-widget.batteryarc")
+local xrandr = require("xrandr")
+
 -- Enable hotkeys help widget for VIM and other apps
 -- when client with a matching name is opened:
 require("awful.hotkeys_popup.keys")
@@ -346,7 +348,8 @@ globalkeys = gears.table.join(
     awful.key({}, "#232", function () awful.util.spawn("light -U 5") end),
     
     awful.key({}, "#123", function () volume_widget:inc() end),
-    awful.key({}, "#122", function () volume_widget:dec() end)
+    awful.key({}, "#122", function () volume_widget:dec() end),
+    awful.key({ modkey, "Control", "Shift" }, "m", function() xrandr.xrandr() end)
 )
 
 
