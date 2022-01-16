@@ -1,6 +1,7 @@
 
 
 #Command aliases
+alias ls='colorls'
 alias ll='colorls -lAh --sd'
 alias lc='colorls -lAh --sd'
 
