@@ -1,7 +1,7 @@
 # Paths
 export XDG_CONFIG_HOME=$HOME/.config
 export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOPATH/bin:~/.cargo/bin
 export AmongUs=/home/dragon/.local/share/Steam/steamapps/common/Among\ Us
 
 # VsCodium
