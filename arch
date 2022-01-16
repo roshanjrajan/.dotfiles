@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
 # run this script 
-STOW_FOLDERS="alacritty,arch_generic,awesome,nvim,tmux,zsh"
+STOW_FOLDERS="arch_generic,awesome,kitty,nvim,tmux,zsh"
 
 $DOTFILES/install
