@@ -3,4 +3,4 @@
 # run this script 
 STOW_FOLDERS="arch_generic,awesome,kitty,nvim,tmux,zsh"
 
-$DOTFILES/install
+source $DOTFILES/install
